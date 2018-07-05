@@ -35,4 +35,10 @@
   - create constant, actions in flag component
   - create flag container and map state, dispatch to props
   *trong folder components/flag a de export default kha nhieu, lam sao ma no' biet ma lay cai file index.js nhi*
-  
+## Setup react router v4
+  - install react router v4
+  - wrap Route in BrowserRouter
+  - create public layout
+  - add header to pulic layout
+  - create private layout
+  - copy fake authen code
