@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
+import "babel-polyfill";
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import store from './store/store';
 import App from './components/app';
