@@ -1,6 +1,7 @@
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   module: {
@@ -28,6 +29,12 @@ module.exports = {
     ]
   },
   plugins: [
+    new StyleLintPlugin({
+      configFile: '.stylelintrc',
+      context: 'src',
+      files: '**/*.scss',
+      syntax: 'scss',
+    }),
     new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
       title: 'My Title',
